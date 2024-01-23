@@ -1,0 +1,85 @@
+/* nav.css */
+
+:root {
+    --primary-color: #333;
+    --secondary-color: #fff;
+    --accent-color: #ffd700;
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Dodane efekty przejścia */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Dodany cień */
+    transform: rotate(0deg); /* Przykładowe użycie transformacji */
+}
+
+.navbar:hover {
+    background-color: #444;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin-right: 15px;
+    transform: scale(1); /* Przykładowe użycie transformacji */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Dodane efekty przejścia */
+    margin: 0 10px;
+    border-bottom: 2px solid transparent; /* Dodane podkreślenie */
+}
+
+.nav-link:hover {
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color); /* Podkreślenie po najechaniu myszą */
+}
+
+.nav-item-right {
+    margin-left: auto;
+    animation: slide-in 1s ease-in-out; /* Przykładowe użycie animacji */
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-50px); /* Przykładowe użycie transformacji w animacji */
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Standardowa składnia CSS (bez preprocesora) */
+.navbar {
+    padding: 10px;
+}
+
+.nav-link {
+    margin: 0 10px;
+}
+
+/* Przykładowe użycie preprocessora CSS (np. Sass) */
+
+/*$base-padding: 10px;*/
+
+/*.navbar {*/
+/*    padding: $base-padding;*/
+/*    !* Reszta stylizacji *!*/
+/*}*/
+
+/*.nav-link {*/
+/*    margin: 0 $base-padding;*/
+/*    !* Reszta stylizacji *!*/
+/*}*/

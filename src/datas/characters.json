@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Lochu",
+    "level": 42,
+    "balance": 400,
+    "kills": 3,
+    "deaths": 20
+  },
+  {
+    "id": 2,
+    "name": "Lochus",
+    "level": 50,
+    "balance": 500,
+    "kills": 2,
+    "deaths": 21
+  },
+  {
+    "id": 3,
+    "name": "Killer",
+    "level": 800,
+    "balance": 9900,
+    "kills": 300,
+    "deaths": 2
+  }
+]

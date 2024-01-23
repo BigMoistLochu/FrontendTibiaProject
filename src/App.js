@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import {Component} from "react";
+import NavBar from "./components/Nav";
+import {Route,Routes} from "react-router-dom";
+import Guide from "./components/Guide";
+import Highscores from "./components/Highscores";
+import MainPage from "./components/MainPage";
+class App extends Component {
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  render()
+  {
+    return (
+        <div className="App">
+            <NavBar/>
+
+            <div className="container">
+                <Routes>
+                    {/*<Route path="/" element={<MainPage/>}></Route>*/}
+                    <Route path="/highscores" element={<Highscores/>}></Route>
+                    <Route path="/guide" element={<Guide/>}></Route>
+                </Routes>
+            </div>
+        </div>
+    );
+  }
+
+
 }
+
 
 export default App;
